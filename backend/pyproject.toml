@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "backend"
-version = "0.1.0"
+version = "0.1.1"
 description = "This is a local development template repository for Django and React applications using Docker Compose."
 authors = ["Logan Engle <loganengle.se@gmail.com>"]
 readme = "README.md"
