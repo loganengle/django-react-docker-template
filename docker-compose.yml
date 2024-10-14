@@ -1,0 +1,46 @@
+services:
+
+  postgres:
+    image: postgres:16.1-alpine
+    container_name: postgres
+    ports:
+      - 5432:5432
+    env_file: ./.env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  django:
+    build: ./backend
+    container_name: django
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env
+    volumes:
+      - ./backend/:/srv/app
+      - ./backend/static:/srv/app/static
+    depends_on:
+      - postgres
+
+  react:
+    build: ./frontend
+    container_name: react
+    command: npm start
+    ports:
+      - 3000:3000
+    env_file:
+      - ./.env
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./frontend/:/srv/app
+      - node_modules:/srv/app/node_modules
+    depends_on:
+      - django
+
+
+volumes:
+  node_modules:
+  postgres_data:
