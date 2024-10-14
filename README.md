@@ -4,7 +4,7 @@
 
 This is a local development template repository for Django and React applications using Docker Compose. The intended use is to speed up the development setup and provide a structured environment for building web applications with Django as the backend and React as the frontend.
 
-<span style="color: red; font-weight: bold;">Important: This template is designed solely for local development. It is not configured for deployment and is NOT production-ready. Please avoid using this setup in a production environment without significant modifications and security considerations.</span>
+**Important: This template is designed solely for local development. It is not configured for deployment and is NOT production-ready. Please avoid using this setup in a production environment without significant modifications and security considerations.**
 
 This template aims to streamline the initial setup process, allowing developers to focus on building features rather than configuring their environments. With this template, you can quickly get started on your projects, experiment with new ideas, and enhance your skills in web development using Django and React.
 
