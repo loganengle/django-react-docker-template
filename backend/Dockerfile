@@ -32,3 +32,6 @@ RUN poetry install --no-root --no-interaction --no-ansi
 
 # Copy the entire project
 COPY . .
+
+# Set the entrypoint
+ENTRYPOINT ["/srv/app/entrypoint.sh"]
