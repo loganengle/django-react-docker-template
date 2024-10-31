@@ -53,7 +53,7 @@ You're welcome to fork this repository, but using it as a template may be more b
 
 **The envfile provided in this repository `.env.example` is merely an example - make sure you replace this with your actual `.env` file**
 
-It is expected that there is a legitimate envfile named `.env` as the `docker-compose.yml` relies on it:
+It is expected that there is a legitimate envfile named `.env` as the `docker-compose.yml` relies on it.
 
 ### Useful Commands
 
