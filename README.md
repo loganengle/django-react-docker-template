@@ -43,7 +43,7 @@ You're welcome to fork this repository, but using it as a template may be more b
 1. Create a new GitHub repository.
 2. On your local development machine, navigate to your preferred parent directory and run:
    ```bash
-   git clone https://github.com/loganengle/django-react-docker-boilerplate.git <your-new-local-repo>
+   git clone https://github.com/loganengle/django-react-docker-template.git <your-new-local-repo>
    cd <your-new-local-repo>
    git remote set-url origin <url-of-new-repo>
    git push -u origin main
